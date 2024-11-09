@@ -1,0 +1,72 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color:cornsilk;
+    color: #333;
+  }
+  
+  .effects-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .effects-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2b7a78;
+  }
+  
+  .effects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .effect-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .effect-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .effect-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .effect-item h3 {
+    font-size: 1.25em;
+    color: #204051;
+    margin: 15px 0;
+  }
+  
+  .effect-item p {
+    font-size: 0.95em;
+    padding: 0 15px 15px;
+    color: #555;
+  }
+  
+  @media (max-width: 600px) {
+    .effects-section h1 {
+      font-size: 2em;
+    }
+    
+    .effect-item img {
+      height: 150px;
+    }
+  }
+  
